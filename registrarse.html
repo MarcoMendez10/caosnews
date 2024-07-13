@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--TITULO-->
+    <meta charset="utf-8">
+    <title>CAOS NEWS</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="Buscar">
+    <meta content="Free HTML Templates" name="Descripcion">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">   
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- INICIO DE BARRA SUPERIOR -->
+    <div class="container-fluid">
+        <div class="row align-items-center bg-light px-lg-5">
+            <div class="col-12 col-md-8">
+                <div class="d-flex justify-content-between">
+                    <div class="bg-primary text-white text-center py-2" style="width: 100px;">Destacado</div>
+                    <div class="owl-carousel owl-carousel-1 tranding-carousel position-relative d-inline-flex align-items-center ml-3" style="width: calc(100% - 100px); padding-left: 90px;">
+                        <div class="text-truncate"><a class="text-secondary" href="">Industrias de electricidad, gas y agua caen por primera vez en cinco sexenios.</a></div>
+                        <div class="text-truncate"><a class="text-secondary" href="">La aportación del turismo en Latinoamérica será este año 6% superior al nivel prepandemia: WTTC.</a></div>
+                        <div class="text-truncate"><a class="text-secondary" href="">Pedro Pascal protagonizará nueva película de Nicolas Cage: El actor chileno se unirá al elenco de "The Unbearable Weight of Massive Talent".</a></div>
+                        <div class="text-truncate"><a class="text-secondary" href="">Pinocho de Guillermo del Toro" se estrena en Netflix: La nueva versión del clásico cuento infantil llega a la plataforma streaming el 8 de diciembre de 2024.</a></div>
+                    </div>
+                </div>
+            </div>
+
+             <!--VALIDACION DE FECHA-->
+             <div class="col-md-4 text-right d-none d-md-block">
+                <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Fecha Actual</title>
+                  </head>
+                  <body>
+                    <p> <span id="fechaActualLetras"></span></p>
+                  
+                    <script>
+                      const fechaActual = new Date();
+                      const dia = fechaActual.getDate();
+                      const mes = fechaActual.getMonth();
+                      const año = fechaActual.getFullYear();
+                  
+                      const meses = ["enero", "febrero", "marzo", "abril", "mayo", "junio",
+                                    "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"];
+                  
+                      const fechaEnLetras = `${dia} de ${meses[mes]} de ${año}`;
+                      document.getElementById('fechaActualLetras').textContent = fechaEnLetras;
+                    </script>
+                  </body>
+                  </html>
+            </div>
+            <!--FIN DE VALIDACION DE FECHA-->
+
+            
+        </div>
+        <div class="row align-items-center py-2 px-lg-5">
+            <div class="col-lg-4">
+                <a href="" class="navbar-brand d-none d-lg-block">
+                    <h1 class="m-0 display-5 text-uppercase"><span class="text-primary">News</span>Room</h1>
+                </a>
+            </div>
+            <div class="col-lg-8 text-center text-lg-right">
+                <img class="img-fluid" src="img/ads-700x70.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid p-0 mb-3">
+        <nav class="navbar navbar-expand-lg bg-light navbar-light py-2 py-lg-0 px-lg-5">
+            <a href="" class="navbar-brand d-block d-lg-none">
+                <h1 class="m-0 display-5 text-uppercase"><span class="text-primary">News</span>Room</h1>
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between px-0 px-lg-3" id="navbarCollapse">
+                <div class="navbar-nav mr-auto py-0">
+                    <a href="index.html" class="nav-item nav-link">Inicio</a>
+                    <a href="category.html" class="nav-item nav-link">Categorias</a>
+                    <a href="single.html" class="nav-item nav-link">Noticias</a>
+                    <a href="carga-de-noticias.html" class="nav-item nav-link">Carga de Noticias</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle active" data-toggle="dropdown">Registro</a>
+                        <div class="dropdown-menu rounded-0 m-0">
+                            <a href="iniciar-sesion.html" class="dropdown-item">Iniciar sesión</a>
+                            <a href="registrarse.html" class="dropdown-item">Registrarse</a>
+                            
+                        </div>
+                    </div>
+                    <a href="contact.html" class="nav-item nav-link ">Contacto</a>
+                </div>
+                <div class="input-group ml-auto" style="width: 100%; max-width: 300px;">
+                    <input type="text" class="form-control" placeholder="Buscar">
+                    <div class="input-group-append">
+                        <button class="input-group-text text-secondary"><i
+                                class="fa fa-search"></i></button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- INICIO DE RUTA DE NAVEGACION -->
+    <div class="container-fluid">
+        <div class="container">
+            <nav class="breadcrumb bg-transparent m-0 p-0">
+                <a class="breadcrumb-item" href="#">Inicio</a>
+                <span class="breadcrumb-item active">Contacto</span>
+            </nav>
+        </div>
+    </div>
+    <!-- FINAL DE LA RUTA DE NAVEGACION -->
+
+
+    <!-- INICIO FORMULARIO DE REGISTRO -->
+
+
+    <div class="container mt-5">
+        <h2>Formulario en Pestaña Expandible</h2>
+        <div class="accordion" id="accordionExample">
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Hacer click para expandir o contraer el formulario
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <form id="formulario" onsubmit="return validarFormulario()">
+                            <div class="form-group">
+                                <label for="nombreUsuario">Nombre de Usuario:</label>
+                                <input type="text" class="form-control" id="nombreUsuario" name="nombreUsuario" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="rut">RUT:</label>
+                                <input type="text" class="form-control" id="rut" name="rut" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="nombre">Nombre:</label>
+                                <input type="text" class="form-control" id="nombre" name="nombre" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="apellido">Apellido:</label>
+                                <input type="text" class="form-control" id="apellido" name="apellido" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+                                <input type="date" class="form-control" id="fechaNacimiento" name="fechaNacimiento" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="telefono">Teléfono:</label>
+                                <input type="text" class="form-control" id="telefono" name="telefono" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="correo">Correo electrónico:</label>
+                                <input type="email" class="form-control" id="correo" name="correo" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contraseña">Contraseña:</label>
+                                <input type="password" class="form-control" id="contraseña" name="contraseña" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="direccion">Dirección:</label>
+                                <input type="text" class="form-control" id="direccion" name="direccion" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="comuna">Comuna:</label>
+                                <select class="form-control" id="comuna" name="comuna" required>
+                                    <option value="">Seleccione una comuna</option>
+                                    <option value="Cerrillos">Cerrillos</option>
+                                    <option value="Cerro Navia">Cerro Navia</option>
+                                    <option value="Conchalí">Conchalí</option>
+                                    <option value="El Bosque">El Bosque</option>
+                                    <option value="Estación Central">Estación Central</option>
+                                    <option value="Huechuraba">Huechuraba</option>
+                                    <option value="Independencia">Independencia</option>
+                                    <option value="La Cisterna">La Cisterna</option>
+                                    <option value="La Florida">La Florida</option>
+                                    <option value="La Granja">La Granja</option>
+                                    <option value="La Pintana">La Pintana</option>
+                                    <option value="La Reina">La Reina</option>
+                                    <option value="Las Condes">Las Condes</option>
+                                    <option value="Lo Barnechea">Lo Barnechea</option>
+                                    <option value="Lo Espejo">Lo Espejo</option>
+                                    <option value="Lo Prado">Lo Prado</option>
+                                    <option value="Macul">Macul</option>
+                                    <option value="Maipú">Maipú</option>
+                                    <option value="Ñuñoa">Ñuñoa</option>
+                                    <option value="Pedro Aguirre Cerda">Pedro Aguirre Cerda</option>
+                                    <option value="Peñalolén">Peñalolén</option>
+                                    <option value="Providencia">Providencia</option>
+                                    <option value="Pudahuel">Pudahuel</option>
+                                    <option value="Quilicura">Quilicura</option>
+                                    <option value="Quinta Normal">Quinta Normal</option>
+                                    <option value="Recoleta">Recoleta</option>
+                                    <option value="Renca">Renca</option>
+                                    <option value="San Joaquín">San Joaquín</option>
+                                    <option value="San Miguel">San Miguel</option>
+                                    <option value="San Ramón">San Ramón</option>
+                                    <option value="Santiago">Santiago</option>
+                                    <option value="Vitacura">Vitacura</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Sexo:</label>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="sexo" id="femenino" value="femenino">
+                                    <label class="form-check-label" for="femenino">Femenino</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="sexo" id="masculino" value="masculino">
+                                    <label class="form-check-label" for="masculino">Masculino</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="sexo" id="no-informa" value="no-informa">
+                                    <label class="form-check-label" for="no-informa">No informa</label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="comentario">Cuéntanos más:</label>
+                                <textarea class="form-control" id="comentario" name="comentario" rows="3"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+                            <button type="reset" class="btn btn-secondary">Restablecer</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+        <script>
+            function validarFormulario() {
+                return validarNombreUsuario() && validarRUT() && validarNombreApellido() && validarEdad() && validarTelefono() && validarCorreo() && validarContraseña();
+            }
+    
+            function validarNombreUsuario() {
+                var nombreUsuario = document.getElementById('nombreUsuario').value;
+                if (nombreUsuario.length < 8) {
+                    alert('El nombre de usuario debe tener al menos 8 caracteres.');
+                    return false;
+                }
+                return true;
+            }
+    
+            function validarRUT() {
+                var rut = document.getElementById('rut').value;
+                var regex = /^[0-9]+-[0-9kK]{1}$/;
+                if (!regex.test(rut)) {
+                    alert('El RUT debe tener el formato correcto (ej. 12345678-9).');
+                    return false;
+                }
+                var parts = rut.split('-');
+                var number = parts[0];
+                var dv = parts[1];
+                var M = 0, S = 1;
+                for (; number; number = Math.floor(number / 10))
+                    S = (S + number % 10 * (9 - M++ % 6)) % 11;
+                var checkDigit = S ? S - 1 : 'k';
+                if (dv.toLowerCase() != checkDigit) {
+                    alert('El RUT no es válido.');
+                    return false;
+                }
+                return true;
+            }
+    
+            function validarNombreApellido() {
+                var nombre = document.getElementById('nombre').value;
+                var apellido = document.getElementById('apellido').value;
+                if (nombre.length < 2 || nombre.length > 25) {
+                    alert('El nombre debe tener entre 2 y 25 caracteres.');
+                    return false;
+                }
+                if (apellido.length < 2 || apellido.length > 25) {
+                    alert('El apellido debe tener entre 2 y 25 caracteres.');
+                    return false;
+                }
+                return true;
+            }
+    
+            function validarEdad() {
+                var fechaNacimiento = document.getElementById('fechaNacimiento').value;
+                var hoy = new Date();
+                var fechaNac = new Date(fechaNacimiento);
+                var edad = hoy.getFullYear() - fechaNac.getFullYear();
+                var m = hoy.getMonth() - fechaNac.getMonth();
+                if (m < 0 || (m === 0 && hoy.getDate() < fechaNac.getDate())) {
+                    edad--;
+                }
+                if (edad < 18) {
+                    alert('Debes ser mayor de edad para registrarte.');
+                    return false;
+                }
+                return true;
+            }
+    
+            function validarTelefono() {
+                var telefono = document.getElementById('telefono').value;
+                var regex = /^[0-9]{8}$/;
+                if (!regex.test(telefono)) {
+                    alert('El teléfono debe tener 8 dígitos y solo números son permitidos.');
+                    return false;
+                }
+                return true;
+            }
+    
+            function validarCorreo() {
+                var correo = document.getElementById('correo').value;
+                var patron = /^[^@]+@[^@]+\.[a-zA-Z]{2,}$/;
+                if (!patron.test(correo)) {
+                    alert('Por favor, introduce un correo electrónico válido.');
+                    return false;
+                }
+                return true;
+            }
+            function validarContraseña() {
+                var contraseña = document.getElementById('contraseña').value;
+                if (contraseña.length < 8 || contraseña.length > 16) {
+                    alert('La contraseña debe tener entre 8 y 16 caracteres.');
+                    return false;
+                }
+                if (!/[A-Z]/.test(contraseña)) {
+                    alert('La contraseña debe incluir al menos una letra mayúscula.');
+                    return false;
+                }
+                if (!/\d/.test(contraseña)) {
+                    alert('La contraseña debe incluir al menos un número.');
+                    return false;
+                }
+                return true;
+            }
+            
+        </script>
+    </div>
+
+   
+    <!-- FIN DE FORMULARIO DE REGISTRO -->
+
+
+
+    <!-- INICIO DE PIE DE PAGINA -->
+    <!-- CATEGORIAS -->
+    <div class="container-fluid bg-light pt-5 px-sm-3 px-md-5">
+    
+    </div>
+    <div class="col-lg-3 col-md-6 mb-5">
+        <h4 class="font-weight-bold mb-4">Categorías</h4>
+        <div class="d-flex flex-wrap m-n1">
+            
+            <a href="category.html" class="btn btn-sm btn-outline-secondary m-1">Negocios</a>
+            <a href="category.html" class="btn btn-sm btn-outline-secondary m-1">Deportes</a>
+            <a href="category.html" class="btn btn-sm btn-outline-secondary m-1">Tecnología</a>
+            <a href="category.html" class="btn btn-sm btn-outline-secondary m-1">Entretenimiento</a>
+        </div>
+    </div>
+    <div class="col-lg-3 col-md-6 mb-5">
+        <h4 class="font-weight-bold mb-4">Links</h4>
+        <div class="d-flex flex-column justify-content-start">
+            <a class="text-secondary mb-2" href="acerca-de-nosotros.html"><i class="fa fa-angle-right text-dark mr-2"></i>Acerca De</a>
+            <a class="text-secondary" href="contact.html"><i class="fa fa-angle-right text-dark mr-2"></i>Contacto</a>
+        </div>
+    </div>
+</div>
+</div>
+<div class="container-fluid py-4 px-sm-3 px-md-5">
+<p class="m-0 text-center">
+    &copy; <a class="font-weight-bold" href="index.html">Sitio Web Caos News</a>. Todos los Derechos Reservados. 
+    
+    <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+    Programado Por <a class="font-weight-bold" >Marco Méndez - Mauricio Álvarez - Matías Candia</a>
+</p>
+</div>
+<!-- Footer End -->
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-dark back-to-top"><i class="fa fa-angle-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

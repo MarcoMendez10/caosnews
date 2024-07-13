@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>CaosNews-ContactoCatregorías</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">   
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Topbar Start -->
+    <div class="container-fluid">
+        <div class="row align-items-center bg-light px-lg-5">
+            <div class="col-12 col-md-8">
+                <div class="d-flex justify-content-between">
+                    <div class="bg-primary text-white text-center py-2" style="width: 100px;">Destacado</div>
+                    <div class="owl-carousel owl-carousel-1 tranding-carousel position-relative d-inline-flex align-items-center ml-3" style="width: calc(100% - 100px); padding-left: 90px;">
+                        <div class="text-truncate"><a class="text-secondary" href="tecnologia-1.html">Microsoft cree haber encontrado la forma de que las PC vuelvan a ser relevantes</a></div>
+                        <div class="text-truncate"><a class="text-secondary" href="tecnologia-2.html">Google despide a 28 empleados por protestar contra el acuerdo sobre la nube con Israel</a></div>
+                    </div>
+                </div>
+            </div>
+             <!--VALIDACION DE FECHA-->
+             <div class="col-md-4 text-right d-none d-md-block">
+                <head>
+                    
+                    <title>Fecha Actual</title>
+                  </head>
+                  <body>
+                    <p> <span id="fechaActualLetras"></span></p>
+                  
+                    <script>
+                      const fechaActual = new Date();
+                      const dia = fechaActual.getDate();
+                      const mes = fechaActual.getMonth();
+                      const año = fechaActual.getFullYear();
+                  
+                      const meses = ["enero", "febrero", "marzo", "abril", "mayo", "junio",
+                                    "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"];
+                  
+                      const fechaEnLetras = `${dia} de ${meses[mes]} de ${año}`;
+                      document.getElementById('fechaActualLetras').textContent = fechaEnLetras;
+                    </script>
+                  </body>
+                  </html>
+            </div>
+        </div>
+        <div class="row align-items-center py-2 px-lg-5">
+            <div class="col-lg-4">
+                <a href="index.html" class="navbar-brand d-none d-lg-block">
+                    <h1 class="m-0 display-5 text-uppercase"><span class="text-primary">Caos</span>News</h1>
+                </a>
+            </div>
+            <div class="col-lg-8 text-center text-lg-right">
+                <img class="img-fluid" src="img/ads-700x70.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid p-0 mb-3">
+        <nav class="navbar navbar-expand-lg bg-light navbar-light py-2 py-lg-0 px-lg-5">
+            <a href="" class="navbar-brand d-block d-lg-none">
+                <h1 class="m-0 display-5 text-uppercase"><span class="text-primary">Caos</span>News</h1>
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between px-0 px-lg-3" id="navbarCollapse">
+                <div class="navbar-nav mr-auto py-0">
+                    <a href="index.html" class="nav-item nav-link">Inicio</a>
+                    <a href="category.html" class="nav-item nav-link active">Categorías</a>
+                    <a href="single.html" class="nav-item nav-link">Noticias</a>
+                    <a href="carga-de-noticias.html" class="nav-item nav-link">Carga de Noticias</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Registro</a>
+                        <div class="dropdown-menu rounded-0 m-0">
+                            <a href="iniciar-sesion.html" class="dropdown-item">Iniciar sesión </a>
+                            <a href="registrarse.html" class="dropdown-item">Registrarse</a>
+                        </div>
+                    </div>
+                    <a href="contact.html" class="nav-item nav-link">Contacto</a>
+                </div>
+                <div class="input-group ml-auto" style="width: 100%; max-width: 300px;">
+                    <input type="text" class="form-control" placeholder="Buscar">
+                    <div class="input-group-append">
+                        <button class="input-group-text text-secondary"><i
+                                class="fa fa-search"></i></button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Breadcrumb Start -->
+    <div class="container-fluid">
+        <div class="container">
+            <nav class="breadcrumb bg-transparent m-0 p-0">
+                <a class="breadcrumb-item" href="index.html">Inicio</a>
+                <a class="breadcrumb-item" href="category.html">Categorías</a>
+            </nav>
+        </div>
+    </div>
+    <!-- Breadcrumb End -->
+
+
+    <!-- News With Sidebar Start -->
+    <div class="container-fluid py-3">
+        <div class="container">
+            <div class="row">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="d-flex align-items-center justify-content-between bg-light py-2 px-4 mb-3">
+                                <h3 class="m-0">Tecnología</h3>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="position-relative mb-3">
+                                <img class="img-fluid w-100" src="img/categorias-tecnologia-1.webp" style="object-fit: cover;">
+                                <div class="overlay position-relative bg-light">
+                                    <div class="mb-2" style="font-size: 14px;">
+                                        <a href="">Tecnología</a>
+                                        <span class="px-1">/</span>
+                                        <span>Enero 01, 2045</span>
+                                    </div>
+                                    <a class="h4" href="tecnologia-1.html">Microsoft cree haber encontrado la forma de que las PC vuelvan a ser relevantes</a>
+                                    <p class="m-0">"Creo que estamos muy cerca de ese verdadero avance", añadió.
+                                        Las computadoras, que están repletas de procesadores que potencian herramientas avanzadas de IA, llegan en 
+                                        un momento en que las ventas de PC se han estancado durante años. La empresa espera que las nuevas máquinas 
+                                        impulsen las ventas y reaviven el entusiasmo, sobre todo porque se espera que la IA forme parte cada vez más de la vida cotidiana.
+                                        La nueva línea de PC Copilot+ de Microsoft, que incluye una nueva tableta Surface Pro y una laptop Surface, incluye herramientas 
+                                        de IA que no requieren conexión a internet: el procesamiento de la inteligencia artificial se realiza directamente en el dispositivo.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="position-relative mb-3">
+                                <img class="img-fluid w-100" src="img/categorias-tecnologia-2.webp" style="object-fit: cover;">
+                                <div class="overlay position-relative bg-light">
+                                    <div class="mb-2" style="font-size: 14px;">
+                                        <a href="">Tecnología</a>
+                                        <span class="px-1">/</span>
+                                        <span>Enero 01, 2045</span>
+                                    </div>
+                                    <a class="h4" href="tecnologia-2.html">Google despide a 28 empleados por protestar contra el acuerdo sobre la nube con Israel</a>
+                                    <p class="m-0">Los trabajadores fueron despedidos después de que una investigación descubriera que habían organizado 
+                                        protestas dentro de las oficinas de Google en Nueva York y Sunnyvale, California. En Sunnyvale, entraron en el despacho 
+                                        del CEO de Google Cloud, Thomas Kurian, según una publicación en X del grupo que organizó la manifestación, No Tech For Apartheid.
+                                        Los manifestantes portaban pancartas en las que se podía leer "No más genocidio por lucro" y "Estamos con los Googlers palestinos, 
+                                        árabes y musulmanes".</p>
+                                </div>
+                            </div>
+                        </div>
+    <div class="container-fluid py-3">
+        <div class="container">
+            <div class="row">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="d-flex align-items-center justify-content-between bg-light py-2 px-4 mb-3">
+                                <h3 class="m-0">Negocios</h3>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="position-relative mb-3">
+                                <img class="img-fluid w-100" src="img/categorias-negocio-1.webp" style="object-fit: cover;">
+                                <div class="overlay position-relative bg-light">
+                                    <div class="mb-2" style="font-size: 14px;">
+                                        <a href="category.html">Negocios</a>
+                                        <span class="px-1">/</span>
+                                        <span>Enero 01, 2045</span>
+                                    </div>
+                                    <a class="h4" href="negocios-1.html">Jack Ma apuesta por un nuevo negocio alimentario en China</a>
+                                    <p class="m-0">El fundador de Alibaba, Jack Ma, tiene un nuevo título: propietario de “Ma's Kitchen”.
+                                        El multimillonario tecnológico más famoso de China apoyó una startup recién formada, cuyo nombre en inglés se traduce como 
+                                        "Hangzhou Ma's Kitchen Food". Según registros públicos chinos, la compañía se constituyó este miércoles en Hangzhou, la ciudad 
+                                        natal de Ma en el este de China que también sirve como base para el gigante tecnológico y de comercio electrónico Alibaba ( BABA ).
+                                        La nueva empresa se centrará en la venta de alimentos preenvasados, importaciones y exportaciones, y la venta de "productos 
+                                        agrícolas comestibles", según el Sistema Nacional de Publicidad de Información Crediticia Empresarial de China, un registro 
+                                        corporativo administrado por el gobierno.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="position-relative mb-3">
+                                <img class="img-fluid w-100" src="img/categorias-negocio-2.webp" style="object-fit: cover;">
+                                <div class="overlay position-relative bg-light">
+                                    <div class="mb-2" style="font-size: 14px;">
+                                        <a href="category.html">Negocios</a>
+                                        <span class="px-1">/</span>
+                                        <span>Enero 01, 2045</span>
+                                    </div>
+                                    <a class="h4" href="negocios-2.html">España eliminará las "Golden visas" a inversionistas extranjeros para enfrentar una crisis de vivienda</a>
+                                    <p class="m-0">El Gobierno de España anunció este martes que modificará la ley para obtener la llamada "Golden Visa", un permiso de 
+                                        residencia que se le otorga a ciudadanos extranjeros no residentes en la Unión Europea por invertir en viviendas cuyo precio supere los 
+                                        500.000 euros.El anuncio lo hizo en primera instancia el presidente del Gobierno español, Pedro Sánchez, que este lunes dijo que su 
+                                        Gobierno eliminaría la ley aprobada en 2013 por el Partido Popular que permite una residencia a los inversionistas."Lo que vamos es a 
+                                        iniciar el procedimiento para eliminar la concesión de la llamada Golden Visa que permite acceder al régimen de residencia cuando se 
+                                        invierte más de medio millón de euros en bienes inmuebles", dijo."Tener una vivienda digna no puede depender solo de las reglas 
+                                        del mercado", agregó Sánchez.</p>
+                                </div>
+                            </div>
+                        </div>                    
+    <div class="container-fluid py-3">
+        <div class="container">
+            <div class="row">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="d-flex align-items-center justify-content-between bg-light py-2 px-4 mb-3">
+                                <h3 class="m-0">Entretenimiento</h3>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="position-relative mb-3">
+                                <img class="img-fluid w-100" src="img/categorias-entretenimiento-1.webp" style="object-fit: cover;">
+                                <div class="overlay position-relative bg-light">
+                                    <div class="mb-2" style="font-size: 14px;">
+                                        <a href="category.html">Entretenimiento</a>
+                                        <span class="px-1">/</span>
+                                        <span>Enero 01, 2045</span>
+                                    </div>
+                                    <a class="h4" href="entretenimiento-1.html">Disney cierra oficialmente su Splash Mountain y los aficionados están tratando de llevarse todos los recuerdos que pueden</a>
+                                    <p class="m-0">La emblemática atracción Splash Mountain de Walt Disney World cerró oficialmente, pero los fans más entregados hacen todo 
+                                        lo posible por conservar para siempre partes de ella.Multitudes de personas abarrotaron el parque temático Magic Kingdom de Orlando el 
+                                        23 de enero para presenciar el final de la atracción, vestidos con todo tipo de artículos de Splash Mountain y dispuestos a esperar más
+                                         de cuatro horas para dar un último y empapado paseo.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="position-relative mb-3">
+                                <img class="img-fluid w-100" src="img/categorias-entretenimiento-2.jpeg" style="object-fit: cover;">
+                                <div class="overlay position-relative bg-light">
+                                    <div class="mb-2" style="font-size: 14px;">
+                                        <a href="category.html">Entretenimiento</a>
+                                        <span class="px-1">/</span>
+                                        <span>Enero 01, 2045</span>
+                                    </div>
+                                    <a class="h4" href="entretenimiento-2.html">Nominaciones a los Razzie 2022: 'Diana the Musical', Jared Leto y Bruce Willis en la lista</a>
+                                    <p class="m-0">Esto es lo mejor de lo peor del cine de 2021. Las nominaciones a los 42º Premio Razzie se anunciaron el lunes e incluyeron 
+                                        un tributo musical a la fallecida princesa Diana, Jared Leto en "House of Gucci", la película "Karen" y una categoría especial para Bruce 
+                                        Willis."Diana the Musical" de Netflix encabezó la lista con nueve nominaciones, incluyendo peor película, peor director y todas las 
+                                        categorías de actuación.Le siguió el thriller "Karen" que obtuvo cinco nominaciones.Este año se agregó una categoría especial para 
+                                        Bruce Willis, favorito de los Razzies.“Peor actuación de Bruce Willis en una película de 2021” destaca ocho de sus papeles.</p>
+                                </div>
+                            </div>
+                        </div>   
+
+    <div class="container-fluid py-3">
+        <div class="container">
+            <div class="row">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="d-flex align-items-center justify-content-between bg-light py-2 px-4 mb-3">
+                                <h3 class="m-0">Deportes</h3>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="position-relative mb-3">
+                                <img class="img-fluid w-100" src="img/categorias-Deporte-1.webp" style="object-fit: cover;">
+                                <div class="overlay position-relative bg-light">
+                                    <div class="mb-2" style="font-size: 14px;">
+                                        <a href="category.html">Deportes</a>
+                                        <span class="px-1">/</span>
+                                        <span>Enero 01, 2045</span>
+                                    </div>
+                                    <a class="h4" href="deportes-1.html">Gervonta Davis noquea a Ryan García en el séptimo asalto y gana un duelo crucial</a>
+                                    <p class="m-0">En una gran pelea, Gervonta Davis noqueó a Ryan García en el séptimo asalto y sigue invicto.El primer asalto pasó con 
+                                        poca acción, pero ...</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="position-relative mb-3">
+                                <img class="img-fluid w-100" src="img/categorias-Deporte-2-1.jpg" style="object-fit: cover;">
+                                <div class="overlay position-relative bg-light">
+                                    <div class="mb-2" style="font-size: 14px;">
+                                        <a href="">Tecnología</a>
+                                        <span class="px-1">/</span>
+                                        <span>Enero 01, 2045</span>
+                                    </div>
+                                    <a class="h4" href="deportes-2.html">¿Quiénes son los jugadores que han ganado más balones de oro en la historia?</a>
+                                    <p class="m-0">Ya Messi hizo de nuevo historia. Amplió su récord absoluto y ya pocas dudas quedan, con la marca de más balones de oro y 
+                                        un Mundial a cuestas —además de casi incontables distinciones e hitos futbolísticos— de que es el mejor jugador de la historia.En 2023 
+                                        Messi ganó ...</p>
+                                </div>
+                            </div>
+                        </div>     
+
+                                                   
+                    
+                    <div class="mb-3">
+                        <a href="index.html"><img class="img-fluid w-100" src="img/ads-700x70.jpg" alt=""></a>
+                    </div>  
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- News With Sidebar End -->
+
+
+    <!-- categorias -->
+    <div class="container-fluid bg-light pt-5 px-sm-3 px-md-5">
+    
+    </div>
+        <div class="col-lg-3 col-md-6 mb-5">
+            <h4 class="font-weight-bold mb-4">Categorías</h4>
+            <div class="d-flex flex-wrap m-n1">
+                
+                <a href="category.html" class="btn btn-sm btn-outline-secondary m-1">Negocios</a>
+                <a href="category.html" class="btn btn-sm btn-outline-secondary m-1">Deportes</a>
+                <a href="category.html" class="btn btn-sm btn-outline-secondary m-1">Tecnología</a>
+                <a href="category.html" class="btn btn-sm btn-outline-secondary m-1">Entretenimiento</a>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-5">
+            <h4 class="font-weight-bold mb-4">Links</h4>
+            <div class="d-flex flex-column justify-content-start">
+                <a class="text-secondary mb-2" href="acerca-de-nosotros.html"><i class="fa fa-angle-right text-dark mr-2"></i>Acerca De Nosotros</a>
+                <a class="text-secondary" href="contact.html"><i class="fa fa-angle-right text-dark mr-2"></i>Contacto</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid py-4 px-sm-3 px-md-5">
+<p class="m-0 text-center">
+    &copy; <a class="font-weight-bold" href="index.html">Sitio Web Caos News</a>. Todos los Derechos Reservados. 
+    
+    <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+    Programado Por <a class="font-weight-bold" href="contact.html">Marco Méndez - Mauricio Álvarez - Matías Candia</a>
+</p>
+</div>
+<!-- Footer End -->
+
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-dark back-to-top"><i class="fa fa-angle-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

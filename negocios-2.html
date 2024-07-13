@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>CaosNews</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">   
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Topbar Start -->
+    <div class="container-fluid">
+        <div class="row align-items-center bg-light px-lg-5">
+            <div class="col-12 col-md-8">
+                <div class="d-flex justify-content-between">
+                    <div class="bg-primary text-white text-center py-2" style="width: 100px;">Destacado</div>
+                    <div class="owl-carousel owl-carousel-1 tranding-carousel position-relative d-inline-flex align-items-center ml-3" style="width: calc(100% - 100px); padding-left: 90px;">
+                        <div class="text-truncate"><a class="text-secondary" href="">Labore sit justo amet eos sed, et sanctus dolor diam eos</a></div>
+                        <div class="text-truncate"><a class="text-secondary" href="">Gubergren elitr amet eirmod et lorem diam elitr, ut est erat Gubergren elitr amet eirmod et lorem diam elitr, ut est erat</a></div>
+                    </div>
+                </div>
+            </div>
+            <!--VALIDACION DE FECHA-->
+            <div class="col-md-4 text-right d-none d-md-block">
+                <head>
+                    
+                    <title>Fecha Actual</title>
+                  </head>
+                  <body>
+                    <p> <span id="fechaActualLetras"></span></p>
+                  
+                    <script>
+                      const fechaActual = new Date();
+                      const dia = fechaActual.getDate();
+                      const mes = fechaActual.getMonth();
+                      const año = fechaActual.getFullYear();
+                  
+                      const meses = ["enero", "febrero", "marzo", "abril", "mayo", "junio",
+                                    "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"];
+                  
+                      const fechaEnLetras = `${dia} de ${meses[mes]} de ${año}`;
+                      document.getElementById('fechaActualLetras').textContent = fechaEnLetras;
+                    </script>
+                  </body>
+                  </html>
+            </div>
+            <!--FIN DE VALIDACION DE FECHA-->
+        </div>
+        <div class="row align-items-center py-2 px-lg-5">
+            <div class="col-lg-4">
+                <a href="" class="navbar-brand d-none d-lg-block">
+                    <h1 class="m-0 display-5 text-uppercase"><span class="text-primary">Caos</span>News</h1>
+                </a>
+            </div>
+            <div class="col-lg-8 text-center text-lg-right">
+                <img class="img-fluid" src="img/ads-700x70.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid p-0 mb-3">
+        <nav class="navbar navbar-expand-lg bg-light navbar-light py-2 py-lg-0 px-lg-5">
+            <a href="" class="navbar-brand d-block d-lg-none">
+                <h1 class="m-0 display-5 text-uppercase"><span class="text-primary">Caos</span>News</h1>
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between px-0 px-lg-3" id="navbarCollapse">
+                <div class="navbar-nav mr-auto py-0">
+                    <a href="index.html" class="nav-item nav-link">Inicio</a>
+                    <a href="category.html" class="nav-item nav-link">Categorías</a>
+                    <a href="single.html" class="nav-item nav-link active">Noticias</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Registro</a>
+                        <div class="dropdown-menu rounded-0 m-0">
+                            <a href="#" class="dropdown-item">Iniciar sesión</a>
+                            <a href="#" class="dropdown-item">Registrarse</a>
+                        </div>
+                    </div>
+                    <a href="contact.html" class="nav-item nav-link">Contacto</a>
+                </div>
+                <div class="input-group ml-auto" style="width: 100%; max-width: 300px;">
+                    <input type="text" class="form-control" placeholder="Buscar">
+                    <div class="input-group-append">
+                        <button class="input-group-text text-secondary"><i class="fa fa-search"></i></button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Breadcrumb Start -->
+    <div class="container-fluid">
+        <div class="container">
+            <nav class="breadcrumb bg-transparent m-0 p-0">
+                <a class="breadcrumb-item" href="#">Inicio</a>
+                <a class="breadcrumb-item" href="#">Noticias</a>
+            </nav>
+        </div>
+    </div>
+    <!-- Breadcrumb End -->
+
+
+    <!-- News With Sidebar Start -->
+    <div class="container-fluid py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <!-- News Detail Start 1-->
+                    <div id="tecnologia-1" class="position-relative mb-3">
+                        <img class="img-fluid w-100" src="img/categorias-negocio-2.webp" style="object-fit: cover;">
+                        <div class="overlay position-relative bg-light">
+                            <div class="mb-3">
+                                <a href="category.html">Negocios</a>
+                                <span class="px-1">/</span>
+                                <span>Enero 01, 2045</span>
+                            </div>
+                            <div class="content">
+                                <a class="h4" href="negocios-2.html">España eliminará las "Golden visas" a inversionistas extranjeros para enfrentar una crisis de vivienda</a>
+                                <div class="content">
+                                    <p>El Gobierno de España anunció este martes que modificará la ley para obtener la llamada "Golden Visa", un permiso de residencia que se le otorga a ciudadanos extranjeros no residentes en la Unión Europea por invertir en viviendas cuyo precio supere los 500.000 euros.</p>
+                                    
+                                    <p>El anuncio lo hizo en primera instancia el presidente del Gobierno español, Pedro Sánchez, que este lunes dijo que su Gobierno eliminaría la ley aprobada en 2013 por el Partido Popular que permite una residencia a los inversionistas.</p>
+                                    
+                                    <p>"Lo que vamos es a iniciar el procedimiento para eliminar la concesión de la llamada Golden Visa que permite acceder al régimen de residencia cuando se invierte más de medio millón de euros en bienes inmuebles", dijo.</p>
+                                    
+                                    <h4 class="mb-3">"Tener una vivienda digna no puede depender solo de las reglas del mercado", agregó Sánchez.</h4>
+                                    
+                                    <img class="img-fluid w-50 float-left mr-4 mb-2" src="img/categorias-negocio-2-1.webp" alt="Golden Visa">
+                                    
+                                    <p>Al comprar una vivienda por un valor de 500.000 euros (US$ 541.250), los titulares de la Golden Visa tenían autorización de residencia por cinco años, prorrogables por otros cinco años bajo el cumplimiento de ciertos requisitos, y no existía el cumplimiento obligatorio de permanencia en el país para renovar este permiso, señaló la ministra de Vivienda y Agenda Urbana de España, Isabel Rodríguez.</p>
+                                    
+                                    <p>Con España enfrentando una crisis por falta de vivienda asequible debido a la falta de oferta residencial y el aumento de precios en los alquileres en ciertas ciudades, los residentes locales están perdiendo el acceso a una vivienda digna.</p>
+                                    
+                                    <p>"La eliminación de las Golden Visa inmobiliarias sirve para dar oportunidades a quienes hoy tienen problemas muy graves, problemas que quitan el sueño, que generan desesperanza en la ciudadanía, en ciudades muy concretas que hemos podido analizar, donde existe una tensión de los precios y una falta de oferta residencial", dijo este martes Rodríguez en una rueda de prensa.</p>
+                                </div>
+                                
+
+                            </div>
+                            
+                        </div>
+                    </div>
+                                               
+                </div>
+
+                <div class="col-lg-4 pt-3 pt-lg-0">
+                    <!-- Newsletter Start -->
+                    <div class="pb-3">
+                        <div class="bg-light py-2 px-4 mb-3">
+                            <h3 class="m-0">Boletín Informativo</h3>
+                        </div>
+                        <div class="bg-light text-center p-4 mb-3">
+                            <p>Registrate para recibir mas noticias en tu correo electrónico</p>
+                            <div class="input-group" style="width: 100%;">
+                                <input type="text" class="form-control form-control-lg" placeholder="Correo Electrónico">
+                                <div class="input-group-append">
+                                    <button class="btn btn-primary">Registrese</button>
+                                </div>
+                            </div>
+                            <small>Puedes anular suscripción cuando quieras</small>
+                        </div>
+                    </div>
+                    <!-- Newsletter End -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- News With Sidebar End -->
+
+    <!-- Categorías -->
+    <div class="container-fluid bg-light pt-5 px-sm-3 px-md-5">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h4 class="font-weight-bold mb-4">Categorías</h4>
+                <div class="d-flex flex-wrap m-n1">
+                    <a href="" class="btn btn-sm btn-outline-secondary m-1">Negocios</a>
+                    <a href="" class="btn btn-sm btn-outline-secondary m-1">Deportes</a>
+                    <a href="" class="btn btn-sm btn-outline-secondary m-1">Tecnología</a>
+                    <a href="" class="btn btn-sm btn-outline-secondary m-1">Entretenimiento</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h4 class="font-weight-bold mb-4">Links</h4>
+                <div class="d-flex flex-column justify-content-start">
+                    <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right text-dark mr-2"></i>Acerca De</a>
+                    <a class="text-secondary" href="contact.html"><i class="fa fa-angle-right text-dark mr-2"></i>Contacto</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="container-fluid py-4 px-sm-3 px-md-5">
+        <p class="m-0 text-center">
+            &copy; <a class="font-weight-bold" href="#">Sitio Web Caos News</a>. Todos los Derechos Reservados. 
+            Programado Por <a class="font-weight-bold" href="https://htmlcodex.com">Marco Méndez - Mauricio Álvarez - Matías Candia</a>
+        </p>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-dark back-to-top"><i class="fa fa-angle-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

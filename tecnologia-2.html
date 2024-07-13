@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>CaosNews</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">   
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Topbar Start -->
+    <div class="container-fluid">
+        <div class="row align-items-center bg-light px-lg-5">
+            <div class="col-12 col-md-8">
+                <div class="d-flex justify-content-between">
+                    <div class="bg-primary text-white text-center py-2" style="width: 100px;">Destacado</div>
+                    <div class="owl-carousel owl-carousel-1 tranding-carousel position-relative d-inline-flex align-items-center ml-3" style="width: calc(100% - 100px); padding-left: 90px;">
+                        <div class="text-truncate"><a class="text-secondary" href="">Labore sit justo amet eos sed, et sanctus dolor diam eos</a></div>
+                        <div class="text-truncate"><a class="text-secondary" href="">Gubergren elitr amet eirmod et lorem diam elitr, ut est erat Gubergren elitr amet eirmod et lorem diam elitr, ut est erat</a></div>
+                    </div>
+                </div>
+            </div>
+            <!--VALIDACION DE FECHA-->
+            <div class="col-md-4 text-right d-none d-md-block">
+                <head>
+                    
+                    <title>Fecha Actual</title>
+                  </head>
+                  <body>
+                    <p> <span id="fechaActualLetras"></span></p>
+                  
+                    <script>
+                      const fechaActual = new Date();
+                      const dia = fechaActual.getDate();
+                      const mes = fechaActual.getMonth();
+                      const año = fechaActual.getFullYear();
+                  
+                      const meses = ["enero", "febrero", "marzo", "abril", "mayo", "junio",
+                                    "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"];
+                  
+                      const fechaEnLetras = `${dia} de ${meses[mes]} de ${año}`;
+                      document.getElementById('fechaActualLetras').textContent = fechaEnLetras;
+                    </script>
+                  </body>
+                  </html>
+            </div>
+            <!--FIN DE VALIDACION DE FECHA-->
+        </div>
+        <div class="row align-items-center py-2 px-lg-5">
+            <div class="col-lg-4">
+                <a href="" class="navbar-brand d-none d-lg-block">
+                    <h1 class="m-0 display-5 text-uppercase"><span class="text-primary">Caos</span>News</h1>
+                </a>
+            </div>
+            <div class="col-lg-8 text-center text-lg-right">
+                <img class="img-fluid" src="img/ads-700x70.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid p-0 mb-3">
+        <nav class="navbar navbar-expand-lg bg-light navbar-light py-2 py-lg-0 px-lg-5">
+            <a href="" class="navbar-brand d-block d-lg-none">
+                <h1 class="m-0 display-5 text-uppercase"><span class="text-primary">Caos</span>News</h1>
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between px-0 px-lg-3" id="navbarCollapse">
+                <div class="navbar-nav mr-auto py-0">
+                    <a href="index.html" class="nav-item nav-link">Inicio</a>
+                    <a href="category.html" class="nav-item nav-link">Categorías</a>
+                    <a href="single.html" class="nav-item nav-link active">Noticias</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Registro</a>
+                        <div class="dropdown-menu rounded-0 m-0">
+                            <a href="#" class="dropdown-item">Iniciar sesión</a>
+                            <a href="#" class="dropdown-item">Registrarse</a>
+                        </div>
+                    </div>
+                    <a href="contact.html" class="nav-item nav-link">Contacto</a>
+                </div>
+                <div class="input-group ml-auto" style="width: 100%; max-width: 300px;">
+                    <input type="text" class="form-control" placeholder="Buscar">
+                    <div class="input-group-append">
+                        <button class="input-group-text text-secondary"><i class="fa fa-search"></i></button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Breadcrumb Start -->
+    <div class="container-fluid">
+        <div class="container">
+            <nav class="breadcrumb bg-transparent m-0 p-0">
+                <a class="breadcrumb-item" href="#">Inicio</a>
+                <a class="breadcrumb-item" href="#">Noticias</a>
+            </nav>
+        </div>
+    </div>
+    <!-- Breadcrumb End -->
+
+
+    <!-- News With Sidebar Start -->
+    <div class="container-fluid py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <!-- News Detail Start 1-->
+                    <div id="tecnologia-1" class="position-relative mb-3">
+                        <img class="img-fluid w-100" src="img/categorias-tecnologia-2.webp" style="object-fit: cover;">
+                        <div class="overlay position-relative bg-light">
+                            <div class="mb-3">
+                                <a href="">Tecnologia</a>
+                                <span class="px-1">/</span>
+                                <span>Enero 01, 2045</span>
+                            </div>
+                            <div class="content">
+                                <h3 class="mb-3">Google despide a 28 empleados por protestar contra el acuerdo sobre la nube con Israel</h3>
+                                <p>Google despidió a más de dos docenas de empleados que protestaron esta semana contra el contrato de computación en la nube de la empresa con el Gobierno de Israel.</p>
+                                <p>Los trabajadores fueron despedidos después de que una investigación descubriera que habían organizado protestas dentro de las oficinas de Google en Nueva York y Sunnyvale, California. En Sunnyvale, entraron en el despacho del CEO de Google Cloud, Thomas Kurian, según una publicación en X del grupo que organizó la manifestación, No Tech For Apartheid.</p>
+                                
+                                <img class="img-fluid w-50 float-left mr-4 mb-2" src="img/categorias-tecnologia-2-1.webp" alt="Protesta en Google">
+                            
+                                <p>Los manifestantes portaban pancartas en las que se podía leer "No más genocidio por lucro" y "Estamos con los Googlers palestinos, árabes y musulmanes".</p>
+                                <p>Un portavoz de Google dijo este jueves a CNN que las protestas "formaban parte de una campaña de larga duración de un grupo de organizaciones y personas que en su mayoría no trabajan en la empresa."</p>
+                                <p>"Un pequeño número de empleados manifestantes entraron y alteraron algunas de nuestras sedes. Obstaculizar físicamente el trabajo de otros empleados e impedirles el acceso a nuestras instalaciones es una clara violación de nuestras políticas y un comportamiento totalmente inaceptable. Tras negarse en múltiples ocasiones a abandonar las instalaciones, se recurrió a las fuerzas del orden para desalojarlos y garantizar la seguridad de las oficinas", añadió el portavoz.</p>
+                                
+                                <h5 class="mb-3">Google Cloud e Israel</h5>
+                                <img class="img-fluid w-50 float-right ml-4 mb-2" src="img/categorias-tecnologia-2-2.webp" alt="Google Cloud e Israel">
+                            
+                                <p>El contrato de Google Cloud con el Gobierno de Israel se remonta a 2021, cuando la compañía anunció que había sido elegida para proporcionar "servicios de nube pública para ayudar a abordar los desafíos del país dentro del sector público, incluidos la atención médica, el transporte y la educación".</p>
+                                <p>Las protestas se produjeron después de que la revista Time publicara a principios de este mes, citando un documento interno de la empresa, que el Ministerio de Defensa de Israel es cliente de Google Cloud.</p>
+                                <p>Según Time, el Ministerio tiene su propio punto de entrada seguro a la infraestructura informática proporcionada por Google, lo que le permitiría almacenar y procesar datos y acceder a servicios de inteligencia artificial. A principios de este año, el Ministerio también solicitó asistencia de consultoría a Google para ampliar su acceso a Google Cloud, informó Time.</p>
+                            </div>
+                        </div>
+                    </div>
+                                               
+                </div>
+
+                <div class="col-lg-4 pt-3 pt-lg-0">
+                    <!-- Newsletter Start -->
+                    <div class="pb-3">
+                        <div class="bg-light py-2 px-4 mb-3">
+                            <h3 class="m-0">Boletín Informativo</h3>
+                        </div>
+                        <div class="bg-light text-center p-4 mb-3">
+                            <p>Registrate para recibir mas noticias en tu correo electrónico</p>
+                            <div class="input-group" style="width: 100%;">
+                                <input type="text" class="form-control form-control-lg" placeholder="Correo Electrónico">
+                                <div class="input-group-append">
+                                    <button class="btn btn-primary">Registrese</button>
+                                </div>
+                            </div>
+                            <small>Puedes anular suscripción cuando quieras</small>
+                        </div>
+                    </div>
+                    <!-- Newsletter End -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- News With Sidebar End -->
+
+    <!-- Categorías -->
+    <div class="container-fluid bg-light pt-5 px-sm-3 px-md-5">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h4 class="font-weight-bold mb-4">Categorías</h4>
+                <div class="d-flex flex-wrap m-n1">
+                    <a href="" class="btn btn-sm btn-outline-secondary m-1">Negocios</a>
+                    <a href="" class="btn btn-sm btn-outline-secondary m-1">Deportes</a>
+                    <a href="" class="btn btn-sm btn-outline-secondary m-1">Tecnología</a>
+                    <a href="" class="btn btn-sm btn-outline-secondary m-1">Entretenimiento</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h4 class="font-weight-bold mb-4">Links</h4>
+                <div class="d-flex flex-column justify-content-start">
+                    <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right text-dark mr-2"></i>Acerca De</a>
+                    <a class="text-secondary" href="contact.html"><i class="fa fa-angle-right text-dark mr-2"></i>Contacto</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="container-fluid py-4 px-sm-3 px-md-5">
+        <p class="m-0 text-center">
+            &copy; <a class="font-weight-bold" href="#">Sitio Web Caos News</a>. Todos los Derechos Reservados. 
+            Programado Por <a class="font-weight-bold" href="https://htmlcodex.com">Marco Méndez - Mauricio Álvarez - Matías Candia</a>
+        </p>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-dark back-to-top"><i class="fa fa-angle-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

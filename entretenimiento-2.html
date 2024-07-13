@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>CaosNews</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">   
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Topbar Start -->
+    <div class="container-fluid">
+        <div class="row align-items-center bg-light px-lg-5">
+            <div class="col-12 col-md-8">
+                <div class="d-flex justify-content-between">
+                    <div class="bg-primary text-white text-center py-2" style="width: 100px;">Destacado</div>
+                    <div class="owl-carousel owl-carousel-1 tranding-carousel position-relative d-inline-flex align-items-center ml-3" style="width: calc(100% - 100px); padding-left: 90px;">
+                        <div class="text-truncate"><a class="text-secondary" href="">Labore sit justo amet eos sed, et sanctus dolor diam eos</a></div>
+                        <div class="text-truncate"><a class="text-secondary" href="">Gubergren elitr amet eirmod et lorem diam elitr, ut est erat Gubergren elitr amet eirmod et lorem diam elitr, ut est erat</a></div>
+                    </div>
+                </div>
+            </div>
+            <!--VALIDACION DE FECHA-->
+            <div class="col-md-4 text-right d-none d-md-block">
+                <head>
+                    
+                    <title>Fecha Actual</title>
+                  </head>
+                  <body>
+                    <p> <span id="fechaActualLetras"></span></p>
+                  
+                    <script>
+                      const fechaActual = new Date();
+                      const dia = fechaActual.getDate();
+                      const mes = fechaActual.getMonth();
+                      const año = fechaActual.getFullYear();
+                  
+                      const meses = ["enero", "febrero", "marzo", "abril", "mayo", "junio",
+                                    "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"];
+                  
+                      const fechaEnLetras = `${dia} de ${meses[mes]} de ${año}`;
+                      document.getElementById('fechaActualLetras').textContent = fechaEnLetras;
+                    </script>
+                  </body>
+                  </html>
+            </div>
+            <!--FIN DE VALIDACION DE FECHA-->
+        </div>
+        <div class="row align-items-center py-2 px-lg-5">
+            <div class="col-lg-4">
+                <a href="" class="navbar-brand d-none d-lg-block">
+                    <h1 class="m-0 display-5 text-uppercase"><span class="text-primary">Caos</span>News</h1>
+                </a>
+            </div>
+            <div class="col-lg-8 text-center text-lg-right">
+                <img class="img-fluid" src="img/ads-700x70.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid p-0 mb-3">
+        <nav class="navbar navbar-expand-lg bg-light navbar-light py-2 py-lg-0 px-lg-5">
+            <a href="" class="navbar-brand d-block d-lg-none">
+                <h1 class="m-0 display-5 text-uppercase"><span class="text-primary">Caos</span>News</h1>
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between px-0 px-lg-3" id="navbarCollapse">
+                <div class="navbar-nav mr-auto py-0">
+                    <a href="index.html" class="nav-item nav-link">Inicio</a>
+                    <a href="category.html" class="nav-item nav-link">Categorías</a>
+                    <a href="single.html" class="nav-item nav-link active">Noticias</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Registro</a>
+                        <div class="dropdown-menu rounded-0 m-0">
+                            <a href="#" class="dropdown-item">Iniciar sesión</a>
+                            <a href="#" class="dropdown-item">Registrarse</a>
+                        </div>
+                    </div>
+                    <a href="contact.html" class="nav-item nav-link">Contacto</a>
+                </div>
+                <div class="input-group ml-auto" style="width: 100%; max-width: 300px;">
+                    <input type="text" class="form-control" placeholder="Buscar">
+                    <div class="input-group-append">
+                        <button class="input-group-text text-secondary"><i class="fa fa-search"></i></button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Breadcrumb Start -->
+    <div class="container-fluid">
+        <div class="container">
+            <nav class="breadcrumb bg-transparent m-0 p-0">
+                <a class="breadcrumb-item" href="#">Inicio</a>
+                <a class="breadcrumb-item" href="#">Noticias</a>
+            </nav>
+        </div>
+    </div>
+    <!-- Breadcrumb End -->
+
+
+    <!-- News With Sidebar Start -->
+    <div class="container-fluid py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <!-- News Detail Start 1-->
+                    <div id="tecnologia-1" class="position-relative mb-3">
+                        <img class="img-fluid w-100" src="img/categorias-entretenimiento-2.jpeg" style="object-fit: cover;">
+                        <div class="overlay position-relative bg-light">
+                            <div class="mb-3">
+                                <a href="category.html">Entretenimiento</a>
+                                <span class="px-1">/</span>
+                                <span>Enero 01, 2045</span>
+                            </div>
+                            <div class="content">
+                                <div class="content">
+                                    <h3 class="mb-3">Nominaciones a los Razzie 2022: 'Diana the Musical', Jared Leto y Bruce Willis en la lista</h3>
+                                    <h1>Películas Nominadas</h1>
+                                    <ul>
+                                        
+                                        <li>"Diana the Musical" (The Netflix Version)</li>
+                                        <li>"Infinite"</li>
+                                        <li>"Karen"</li>
+                                        <li>"Space Jam: A New Legacy"</li>
+                                        <li>"The Woman in the Window"</li>
+                                    </ul>
+                                
+                                    <h2>Peor Actor</h2>
+                                    <ul>
+                                        <li>Scott Eastwood / "Dangerous"</li>
+                                        <li>Roe Hartrampf / "Diana the Musical"</li>
+                                        <li>LeBron James / "Space Jam: A New Legacy"</li>
+                                        <li>Ben Platt / "Dear Evan Hansen"</li>
+                                        <li>Mark Wahlberg / "Infinite"</li>
+                                    </ul>
+                                
+                                    <h2>Peor Actriz</h2>
+                                    <ul>
+                                        <li>Amy Adams / "The Woman in the Window"</li>
+                                        <li>Jeanna de Waal / "Diana the Musical"</li>
+                                        <li>Megan Fox / "Midnight in the Switchgrass"</li>
+                                        <li>Taryn Manning / "Karen"</li>
+                                        <li>Ruby Rose / "Vanquish"</li>
+                                    </ul>
+                                
+                                    <h2>Peor Actriz de Reparto</h2>
+                                    <ul>
+                                        <li>Amy Adams / "Dear Evan Hansen"</li>
+                                        <li>Sophie Cookson / "Infinite"</li>
+                                        <li>Erin Davie / "Diana the Musical"</li>
+                                        <li>Judy Kaye (como Queen Elizabeth y Barbara Cartland) / "Diana the Musical"</li>
+                                        <li>Taryn Manning / "Every Last One of Them"</li>
+                                    </ul>
+                                
+                                    <h2>Peor Actor de Reparto</h2>
+                                    <ul>
+                                        <li>Ben Affleck / "The Last Duel"</li>
+                                        <li>Nick Cannon / "The Misfits"</li>
+                                        <li>Mel Gibson / "Dangerous"</li>
+                                        <li>Gareth Keegan / "Diana the Musical"</li>
+                                        <li>Jared Leto / "House of Gucci"</li>
+                                    </ul>
+                                
+                                    <h2>Peor Actuación de Bruce Willis en una Película de 2021</h2>
+                                    <ul>
+                                        <li>Bruce Willis / "American Siege"</li>
+                                        <li>Bruce Willis / "Apex"</li>
+                                        <li>Bruce Willis / "Cosmic Sin"</li>
+                                        <li>Bruce Willis / "Deadlock"</li>
+                                        <li>Bruce Willis / "Fortress"</li>
+                                        <li>Bruce Willis / "Midnight in the Switchgrass"</li>
+                                        <li>Bruce Willis / "Out of Death"</li>
+                                        <li>Bruce Willis / "Survive the Game"</li>
+                                    </ul>
+                                
+                                    <h2>Peor Pareja en Pantalla</h2>
+                                    <ul>
+                                        <li>Cualquier miembro del elenco torpe y cualquier letra (o coreografía) poco convincente / Número musical / "Diana the Musical"</li>
+                                        <li>LeBron James y cualquier personaje de dibujos animados de Warner (o producto de Time-Warner) que él regatee / "Space Jam: A New Legacy"</li>
+                                        <li>Jared Leto y su cara de látex de 17 libras, su ropa geek o su acento ridículo / "House of Gucci"</li>
+                                        <li>Ben Platt y cualquier otro personaje que actúe con normalidad con Platt cantando las 24 horas al día, 7 días a la semana / "Dear Evan Hansen"</li>
+                                        <li>Tom & Jerry (también conocidos como Itchy & Scratchy) / "Tom & Jerry the Movie"</li>
+                                    </ul>
+                                
+                                    <h2>Peor Remake, Copia o Secuela</h2>
+                                    <ul>
+                                        <li>"Karen" (Remake involuntario de Cruella deVil)</li>
+                                        <li>"Space Jam: A New Legacy"</li>
+                                        <li>"Tom & Jerry the Movie"</li>
+                                        <li>"Twist" (Remake de rap de Oliver Twist)</li>
+                                        <li>"La mujer en la ventana" (copia de "Rear Window")</li>
+                                    </ul>
+                                
+                                    <h2>Peor Director</h2>
+                                    <ul>
+                                        <li>Christopher Ashley / "Diana the Musical"</li>
+                                        <li>Stephen Chbosky / "Dear Evan Hansen"</li>
+                                        <li>"Coke" Daniels / "Karen"</li>
+                                        <li>Renny Harlin / "The Misfits"</li>
+                                        <li>Joe Wright / "The Woman in the Window"</li>
+                                    </ul>
+                                
+                                    <h2>Peor Guión</h2>
+                                    <ul>
+                                        <li>"Diana the Musical" / Guión de Joe DiPietro, Música y letra de DiPietro y David Bryan</li>
+                                        <li>"Karen" / Escrita por "Coke" Daniels</li>
+                                        <li>"The Misfits" / Guión de Kurt Wimmer y Robert Henny, Historia en pantalla de Henny</li>
+                                        <li>"Twist" / Escrita por John Wrathall y Sally Collett, material adicional de Matthew Parkhill, Michael Lindley, Tom Grass y Kevin Lehane de una "Idea original" de David y Keith Lynch y Simon Thomas</li>
+                                        <li>"The Woman in the Window" / Guión de Tracy Letts, a partir de la novela de AJ Finn</li>
+                                    </ul>
+                                </div>
+                                
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
+                                               
+                </div>
+
+                <div class="col-lg-4 pt-3 pt-lg-0">
+                    <!-- Newsletter Start -->
+                    <div class="pb-3">
+                        <div class="bg-light py-2 px-4 mb-3">
+                            <h3 class="m-0">Boletín Informativo</h3>
+                        </div>
+                        <div class="bg-light text-center p-4 mb-3">
+                            <p>Registrate para recibir mas noticias en tu correo electrónico</p>
+                            <div class="input-group" style="width: 100%;">
+                                <input type="text" class="form-control form-control-lg" placeholder="Correo Electrónico">
+                                <div class="input-group-append">
+                                    <button class="btn btn-primary">Registrese</button>
+                                </div>
+                            </div>
+                            <small>Puedes anular suscripción cuando quieras</small>
+                        </div>
+                    </div>
+                    <!-- Newsletter End -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- News With Sidebar End -->
+
+    <!-- Categorías -->
+    <div class="container-fluid bg-light pt-5 px-sm-3 px-md-5">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h4 class="font-weight-bold mb-4">Categorías</h4>
+                <div class="d-flex flex-wrap m-n1">
+                    <a href="" class="btn btn-sm btn-outline-secondary m-1">Negocios</a>
+                    <a href="" class="btn btn-sm btn-outline-secondary m-1">Deportes</a>
+                    <a href="" class="btn btn-sm btn-outline-secondary m-1">Tecnología</a>
+                    <a href="" class="btn btn-sm btn-outline-secondary m-1">Entretenimiento</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h4 class="font-weight-bold mb-4">Links</h4>
+                <div class="d-flex flex-column justify-content-start">
+                    <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right text-dark mr-2"></i>Acerca De</a>
+                    <a class="text-secondary" href="contact.html"><i class="fa fa-angle-right text-dark mr-2"></i>Contacto</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="container-fluid py-4 px-sm-3 px-md-5">
+        <p class="m-0 text-center">
+            &copy; <a class="font-weight-bold" href="#">Sitio Web Caos News</a>. Todos los Derechos Reservados. 
+            Programado Por <a class="font-weight-bold" href="https://htmlcodex.com">Marco Méndez - Mauricio Álvarez - Matías Candia</a>
+        </p>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-dark back-to-top"><i class="fa fa-angle-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
